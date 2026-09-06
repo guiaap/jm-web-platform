@@ -1,1 +1,126 @@
+/* Fonts -  DM Sans */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+/* Fonts -  Cormorant Garamond */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap');
+
 @import "tailwindcss";
+
+:root {
+
+    /* Color scale - Brown */
+    --color-brown-900: #100b05;
+    --color-brown-800: #1A1209;
+    --color-brown-700: #2A1C0E;
+    --color-brown-600: #3B2815;
+    --color-brown-500: #4D341C;
+    --color-brown-400: #6A4A2A;
+    --color-brown-300: #876038;
+
+    /* Color scale - Golden */
+    --color-gold-900: #4A3A24;
+    --color-gold-800: #6A5433;
+    --color-gold-700: #8B6F47;
+    --color-gold-600: #A38759;
+    --color-gold-500: #C9A96E;
+    --color-gold-400: #DABD8F;
+    --color-gold-300: #E8D4B0;
+
+    /* Base colors */
+    --color-white: #FFFFFF;
+    --color-black: #000000;
+
+    /* Brand color - Green */
+    --color-green:  #25D366;
+    
+    /* Background color */
+    --color-bg-primary: #FAF7F2;
+
+    /* Typography colors */
+    --color-text-primary: var(--color-brown-800);
+    --color-text-secondary: var(--color-bg-primary);
+
+    /* White transparency scale */
+    --color-white-95: rgba(255, 255, 255, 0.95);
+    --color-white-90: rgba(255, 255, 255, 0.90);
+    --color-white-80: rgba(255, 255, 255, 0.80);
+    --color-white-70: rgba(255, 255, 255, 0.70);
+    --color-white-60: rgba(255, 255, 255, 0.60);
+    --color-white-50: rgba(255, 255, 255, 0.50);
+    --color-white-40: rgba(255, 255, 255, 0.40);
+    --color-white-30: rgba(255, 255, 255, 0.30);
+    --color-white-20: rgba(255, 255, 255, 0.20);
+    --color-white-10: rgba(255, 255, 255, 0.10);
+
+    /* Brown transparency scale */
+    --color-brown-95: rgba(26, 18, 9, 0.95);
+    --color-brown-90: rgba(26, 18, 9, 0.90);
+    --color-brown-80: rgba(26, 18, 9, 0.80);
+    --color-brown-70: rgba(26, 18, 9, 0.70);
+    --color-brown-60: rgba(26, 18, 9, 0.60);
+    --color-brown-50: rgba(26, 18, 9, 0.50);
+    --color-brown-40: rgba(26, 18, 9, 0.40);
+    --color-brown-30: rgba(26, 18, 9, 0.30);
+    --color-brown-20: rgba(26, 18, 9, 0.20);
+    --color-brown-10: rgba(26, 18, 9, 0.10);
+
+    /* Gold transparency scale */
+    --color-gold-95: rgba(218, 189, 143, 0.95);
+    --color-gold-90: rgba(218, 189, 143, 0.90);
+    --color-gold-80: rgba(218, 189, 143, 0.80);
+    --color-gold-70: rgba(218, 189, 143, 0.70);
+    --color-gold-60: rgba(218, 189, 143, 0.60);
+    --color-gold-50: rgba(218, 189, 143, 0.50);
+    --color-gold-40: rgba(218, 189, 143, 0.40);
+    --color-gold-30: rgba(218, 189, 143, 0.30);
+    --color-gold-20: rgba(218, 189, 143, 0.20);
+    --color-gold-10: rgba(218, 189, 143, 0.10);
+
+    /* Layout */
+    --container-page: 1800px;
+    --container-content: 1200px;
+    --container-sm: 400px;
+    --container-md: 640px;
+    --container-lg: 800px;
+
+    /* Typography */
+    --font-sans: "DM Sans", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    --font-serif: "Cormorant Garamond", Georgia, Cambria, "Times New Roman", Times, serif;
+
+    /* Effects */
+    --shadow-accent-golden: 0 0 3px var(--color-gold-400);
+    --shadow-accent-green: 0 0 8px var(--color-green);
+    --shadow-accent-green-hover: 0 0 12px var(--color-green);
+
+    /* Gradients */
+    --gradient-hero-overlay: linear-gradient(
+        100deg, 
+        rgba(26,18,9,0.88) 0%, 
+        rgba(26,18,9,0.60) 55%,
+        rgba(26,18,9,0.20) 100%
+    );
+
+    --gradient-radial-overlay: radial-gradient(
+        ellipse 80% 60% at 10% 50%, 
+        rgba(201,169,110,0.08) 0%, transparent 60%
+    ),
+    repeating-linear-gradient(
+        0deg, 
+        transparent,
+        transparent 79px, 
+        rgba(255,255,255,0.02) 80px
+    ), 
+    repeating-linear-gradient(
+        90deg, 
+        transparent, 
+        transparent 79px, 
+        rgba(255,255,255,0.02) 80px
+    );
+
+    --gradient-vertical-divider: linear-gradient(
+        to bottom, 
+        transparent, 
+        var(--color-gold-600), 
+        transparent
+    );
+}
