@@ -2,11 +2,12 @@ import type { ReactNode } from "react";
 
 interface ContainerProps {
     children: ReactNode;
+    className?: string;
 }
 
-function Container({ children }: ContainerProps) {
+function Container({ children, className = "" }: ContainerProps) {
     return (
-        <div className="max-w-(--container-content) mx-auto">
+        <div className={`max-w-(--container-content) mx-auto ${className}`} >
             {children}
         </div>
     );
