@@ -1,5 +1,6 @@
 import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
+import Hero from "./sections/Hero";
 
 function Home() {
 
@@ -19,7 +20,8 @@ function Home() {
     }, [location]);
     
     return (
-        <div className="h-500">
+        <div>
+          <Hero />
         </div>
     );
 }
