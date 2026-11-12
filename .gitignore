@@ -1,0 +1,171 @@
+
+# ============================================
+# Dependencies
+# ============================================
+
+node_modules/
+.pnp.*
+.yarn/cache/
+.yarn/unplugged/
+.yarn/build-state.yml
+.yarn/install-state.gz
+
+# ============================================
+# Environment Variables and Secrets
+# ============================================
+
+.env
+.env.*
+!.env.example
+!.env.*.example
+
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+
+# AWS credentials and local configuration
+.aws/
+
+# ============================================
+# Build and Distribution
+# ============================================
+
+dist/
+build/
+out/
+coverage/
+*.tsbuildinfo
+
+# ============================================
+# Logs and Runtime Files
+# ============================================
+
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+*.pid
+*.pid.lock
+
+# ============================================
+# Temporary Files and Caches
+# ============================================
+
+tmp/
+temp/
+.cache/
+.parcel-cache/
+.eslintcache
+*.tmp
+*.temp
+
+# Vite cache
+.vite/
+
+# ============================================
+# Testing
+# ============================================
+
+coverage/
+.nyc_output/
+test-results/
+playwright-report/
+blob-report/
+
+# ============================================
+# Database
+# ============================================
+
+# Local PostgreSQL data directories
+pgdata/
+postgres-data/
+
+# Database dumps and backups
+*.sql.gz
+*.dump
+*.backup
+*.bak
+
+# ============================================
+# User Uploads and Generated Files
+# ============================================
+
+uploads/
+storage/
+generated/
+downloads/
+
+# ============================================
+# IDE and Editor Settings
+# ============================================
+
+.vscode/*
+!.vscode/extensions.json
+
+.idea/
+*.suo
+*.user
+*.code-workspace
+*.swp
+*.swo
+*~
+
+# ============================================
+# Operating System Files
+# ============================================
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+.Spotlight-V100
+.Trashes
+
+# Linux
+.directory
+.Trash-*
+
+# ============================================
+# Local Development Tools
+# ============================================
+
+# Docker overrides
+docker-compose.override.yml
+compose.override.yml
+
+# Local SSL certificates
+certs/
+ssl/
+
+# ============================================
+# Deployment and Infrastructure
+# ============================================
+
+.serverless/
+.aws-sam/
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+*.tfvars.json
+!*.tfvars.example
+
+# ============================================
+# Miscellaneous
+# ============================================
+
+*.orig
+*.rej
+*.old
