@@ -124,3 +124,28 @@
         transparent
     );
 }
+
+/* Firefox */
+html {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-gold-900) var(--color-gold-300); 
+}
+
+/* Chrome, Edge and Safari */
+html::-webkit-scrollbar {
+  width: 10px;
+}
+
+html::-webkit-scrollbar-track {
+  background: var(--color-gold-300);
+}
+
+html::-webkit-scrollbar-thumb {
+  background: var(--color-gold-900);
+  border-radius: 8px;
+  border: 2px solid var(--color-gold-900);
+}
+
+html::-webkit-scrollbar-thumb:hover {
+  background: var(--color-gold-700);
+}
