@@ -47,7 +47,7 @@ function Hero() {
     return (
         <section 
             id="inicio"
-            className="relative h-screen max-h-[700px] pt-20"
+            className="relative h-screen max-h-[700px] pt-10"
         >
             {bannersURLs.map((bannerURL, i) => (
                 <div 

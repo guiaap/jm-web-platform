@@ -139,8 +139,9 @@ function Header() {
             fixed top-0 z-50
             w-full max-w-(--container-page)
             transition-colors duration-300
-            ${ isScrolled ? "bg-transparent" : "bg-(--color-brown-95)"}
-            backdrop-blur-md
+            bg-(--color-brown-95)
+            ${ isScrolled ? "bg-(--color-brown-95)" : "lg:bg-transparent"}
+            backdrop-blur-sm
         `}>
             <Container>
                 <nav className="
