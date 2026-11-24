@@ -136,7 +136,7 @@ function Header() {
 
     return (
         <header className={`
-            fixed top-0
+            fixed top-0 z-50
             w-full max-w-(--container-page)
             transition-colors duration-300
             ${ isScrolled ? "bg-transparent" : "bg-(--color-brown-95)"}
