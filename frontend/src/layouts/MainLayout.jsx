@@ -13,7 +13,7 @@ function MainLayout() {
                 shadow-lg
             ">
                 <Header />
-                <main>
+                <main className="[&>section]:px-3 [&>section]:py-10">
                     <Outlet />
                 </main>
                 <Footer />
