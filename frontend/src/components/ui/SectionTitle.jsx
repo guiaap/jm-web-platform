@@ -1,12 +1,18 @@
 import { useInView } from "../../hooks/useInView.js";
 
-function SectionTitle({ text01="text", text02="text"}) {
+function SectionTitle({ 
+    text01="text", 
+    text02="text",
+    color01="var(--color-text-primary)",
+    color02="var(--color-gold-500)"
+}) {
 
     const { ref, isVisible } = useInView();
 
     return (
         <h2
             ref={ref}
+            style={{ color: color01 }}
             className={`
                 flex gap-2
                 font-serif
@@ -20,7 +26,10 @@ function SectionTitle({ text01="text", text02="text"}) {
             `}
         >
             {text01}
-            <span className="text-(--color-gold-500) italic">
+            <span 
+                style={{ color: color02 }}
+                className="text-(--color-gold-500) italic"
+            >
                 {text02}
             </span>
         </h2>

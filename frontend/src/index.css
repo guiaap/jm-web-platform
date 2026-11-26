@@ -75,6 +75,8 @@
     --color-gold-30: rgba(218, 189, 143, 0.30);
     --color-gold-20: rgba(218, 189, 143, 0.20);
     --color-gold-10: rgba(218, 189, 143, 0.10);
+    --color-gold-05: rgba(218, 189, 143, 0.05);
+    --color-gold-02: rgba(218, 189, 143, 0.02);
 
     /* Layout */
     --container-page: 1800px;
